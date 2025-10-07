@@ -32,23 +32,9 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-
-    button, .btn {
+    .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin: 20px 0;
       padding: 12px 20px;
       background-color: #ff80aa;
       color: white;
@@ -59,7 +45,7 @@
       text-decoration: none;
     }
 
-    button:hover, .btn:hover {
+    .btn:hover {
       background-color: #ff4d88;
     }
   </style>
@@ -71,22 +57,19 @@
   </header>
 
   <div class="container">
-    <h2>Formulario de envío</h2>
-    <form>
-      <label for="nombre">Tu nombre</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Ej: Camila">
+    <h2>Envía tu historia con el formulario</h2>
 
-      <label for="titulo">Título de tu historia</label>
-      <input type="text" id="titulo" name="titulo" placeholder="Ej: Mi primera partida ganada">
-
-      <label for="historia">Tu historia</label>
-      <textarea id="historia" name="historia" rows="6" placeholder="Escribe aquí tu historia..."></textarea>
-
-      <button type="submit">Enviar historia</button>
-    </form>
+    <!-- Aquí va tu Google Form incrustado -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdqtDpjsddl0WwsJNYIAhT2YsrBb2jcUXYo-euhKaGlN_My2w/viewform?embedded=true" 
+            width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+      Cargando…
+    </iframe>
 
     <h2>O envíala directo por Gmail</h2>
-    <a class="btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=miyanela57u7@gmail.com" target="_blank">
+    <!-- Botón que abre Gmail en modo redacción -->
+    <a class="btn" 
+       href="https://mail.google.com/mail/?view=cm&fs=1&to=miyanela57u7@gmail.com&su=Mi%20historia%20Free%20Fire&body=Hola%2C%20quiero%20compartir%20mi%20historia..." 
+       target="_blank" rel="noopener">
       Abrir Gmail 📧
     </a>
   </div>
